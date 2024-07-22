@@ -2,8 +2,8 @@
 #include <HTTPClient.h>
 #include <DHT.h>
 
-const char* ssid = "PT.DMH";
-const char* password = "ptdmh2022";
+const char* ssid = "jsja";
+const char* password = "uhushauhsuah";
 
 const char* serverAddress = "http://192.168.1.181:5000/submit"; // Ganti dengan IP server yang benar
 
