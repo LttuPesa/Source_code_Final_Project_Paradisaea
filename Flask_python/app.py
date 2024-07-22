@@ -8,7 +8,7 @@ from flask import Flask, jsonify, request
 app = Flask(_name_)
 
 
-URI = "mongodb+srv://paradisaea:09071992@paradisaea.1sgdpuv.mongodb.net/?retryWrites=true&w=majority&appName=Paradisaea"
+URI = "mongodb+srv://paradisaea:......@paradisaea.1sgdpuv.mongodb.net/?retryWrites=true&w=majority&appName=Paradisaea"
 
 client = pymongo.MongoClient(URI)
 db = client["paradisaea"]
