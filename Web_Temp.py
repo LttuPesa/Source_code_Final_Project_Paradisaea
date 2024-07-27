@@ -148,7 +148,7 @@ if page == "Dashboard Utama":
         kipas_status = "Aktif" if data['fan'].values()[-1] == 1 else "Tidak Aktif"
         st.metric("Status Kipas", kipas_status)
 
-    st.subheader("Kontrol Utama")
+    st.subheader(":blue[Kontrol Utama]")
     
     # Kontrol untuk menghidupkan atau mematikan sistem pendingin
     if st.button("Hidupkan Kipas"):
