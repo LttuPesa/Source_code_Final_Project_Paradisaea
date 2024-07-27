@@ -1,3 +1,24 @@
+import os
+import subprocess
+import sys
+
+# Fungsi untuk menginstall package yang dibutuhkan
+def install_packages():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly", "pandas", "requests", "darts", "pymongo", "streamlit"])
+
+# Cek apakah package yang dibutuhkan sudah terinstall, dan install jika belum
+try:
+    import plotly.graph_objects as go
+    import pandas as pd
+    import requests
+    from darts import TimeSeries
+except ImportError:
+    install_packages()
+    import plotly.graph_objects as go
+    import pandas as pd
+    import requests
+    from darts import TimeSeries
+
 import pandas as pd
 import plotly.graph_objects as go
 import pymongo
